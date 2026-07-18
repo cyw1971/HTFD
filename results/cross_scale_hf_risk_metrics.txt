@@ -1,0 +1,12 @@
+# Cross-scale coordination — state-conditioned HF risk
+# dataset=spx  T=24  wavelet=db2  high%=20.0
+# R_L = slope(X^L); thresholds from real quantiles q30=-0.0300447, q70=0.10781
+# M_H = max_t |X^H_t|; D_r = JS(p_real(M_H|r), p_gen(M_H|r)); D_avg = mean_r D_r
+
+## HTFD
+JS_downtrend: 0.132301
+JS_neutral: 0.178827
+JS_uptrend: 0.219097
+D_avg: 0.176741
+n_real_per_regime: [750, 1000, 750]
+n_gen_per_regime: [940, 943, 617]

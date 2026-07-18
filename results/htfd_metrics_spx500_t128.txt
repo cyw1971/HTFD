@@ -1,0 +1,58 @@
+# HTFD metrics — SP500, T=128 (aligned with experiment_tables Table 5)
+# Source: experiment_tables(2).md → Table 5 · HTFD (Ours) · SP500
+# Format: mean±std as reported in the paper table
+# Protocol: generator trained 200 epochs; DS/PS follow TimeGAN post-hoc training
+
+# --- Discriminative Score (DS; lower is better) ---
+discriminative_mean: 0.2342
+discriminative_std: 0.0926
+
+# --- Predictive Score post-hoc (PS; lower is better) ---
+predictive_posthoc_mean: 0.2257
+predictive_posthoc_std: 0.0024
+
+# --- Context-FID (lower is better) ---
+context_fid_mean: 0.2610
+context_fid_std: 0.0240
+
+# --- Correlational Score (lower is better) ---
+correlational_mean: 0.0000
+correlational_std: 0.0001
+
+# --- DTW-JS (lower is better) ---
+dtw_js_mean: 0.1232
+dtw_js_std: 0.0364
+
+# --- Marginal distribution (all values) ---
+CRPS: 0.2793
+CRPS_std: 0.0161
+KL: 0.0798
+KL_std: 0.0068
+JS: 0.0186
+JS_std: 0.0024
+ks_distance: 0.1546
+ks_distance_std: 0.0153
+ks_pvalue: 0.0000
+ks_pvalue_std: 0.0041
+
+# --- Spectral / band energy (lower is better) ---
+psd_distance: 0.1545
+psd_distance_std: 0.0075
+low_frequency_energy_error: 0.2129
+low_frequency_energy_error_std: 0.0062
+high_frequency_energy_error: 0.0018
+high_frequency_energy_error_std: 0.0008
+
+# --- Financial risk structure (lower is better) ---
+var_error: 0.1604
+var_error_std: 0.0119
+cvar_error: 0.1546
+cvar_error_std: 0.0173
+maximum_drawdown_distance: 41.5190
+maximum_drawdown_distance_std: 2.2212
+squared_return_autocorr_error: 0.1260
+squared_return_autocorr_error_std: 0.0101
+tail_quantile_error: 0.1591
+tail_quantile_error_std: 0.0167
+block_maxima_distance: 0.8316
+block_maxima_distance_std: 0.0445

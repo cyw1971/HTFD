@@ -1,0 +1,14 @@
+# HTFD — Python dependencies
+torch
+numpy
+scipy
+pandas
+matplotlib
+seaborn
+tqdm
+scikit-learn
+properscoring
+PyWavelets>=1.4.0
+ptwt>=0.1.7
+
+# Context-FID uses vendored eval_utils/ts2vec; post-hoc DS/PS use utils/tsg_metrics_pt.py.
